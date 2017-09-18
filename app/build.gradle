@@ -36,6 +36,9 @@ dependencies {
     implementation libs.supportAppCompat
     implementation libs.constraintLayout
 
+    implementation libs.dagger
+    annotationProcessor libs.daggerCompiler
+
     testImplementation libs.jUnit
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'

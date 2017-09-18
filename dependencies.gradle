@@ -10,8 +10,10 @@ ext {
     testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
 
     supportLibraryVersion = "26.1.0"
-    jUnitVersion = "4.12"
     constraintLayoutVersion = "1.0.2"
+    daggerVersion = "2.8"
+    javaxAnnotationVersion = '1.0'
+    jUnitVersion = "4.12"
 
     modules = [
             data: project('data')
@@ -19,7 +21,16 @@ ext {
 
     libraries = [
             supportAppCompat: "com.android.support:appcompat-v7:${supportLibraryVersion}",
-            jUnit: "junit:junit:${jUnitVersion}",
-            constraintLayout: "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}"
+            constraintLayout: "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+
+            dagger: "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompiler: "com.google.dagger:dagger-compiler:${daggerVersion}",
+            daggerAndroid: "com.google.dagger:dagger-android:${daggerVersion}",
+            daggerAndroidSupport: "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:${daggerVersion}",
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+
+            jUnit: "junit:junit:${jUnitVersion}"
     ]
 }
+
