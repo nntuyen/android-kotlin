@@ -9,9 +9,17 @@ ext {
     compileSdkVersion = 26
     testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
 
-    supportLibraryVersion = "25.3.1"
+    supportLibraryVersion = "26.1.0"
+    jUnitVersion = "4.12"
+    constraintLayoutVersion = "1.0.2"
+
+    modules = [
+            data: project('data')
+    ]
 
     libraries = [
-            supportAppCompat: "com.android.support:appcompat-v7:${supportLibraryVersion}"
+            supportAppCompat: "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            jUnit: "junit:junit:${jUnitVersion}",
+            constraintLayout: "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}"
     ]
 }
