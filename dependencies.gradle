@@ -1,0 +1,17 @@
+ext {
+    appId = "com.nntuyen.androidkotlin"
+    appVersionName = "1.0.0"
+    appVersionCode = 1
+
+    buildToolsVersion = "26.0.1"
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+
+    supportLibraryVersion = "25.3.1"
+
+    libraries = [
+            supportAppCompat: "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    ]
+}
